@@ -1,0 +1,166 @@
+﻿*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Nunito",sans-serif;
+  background: #f8f8f8; 
+  /*background-image: url(/sunshine_bg.jpg); */
+}
+
+h1 {
+  font-weight: 150;
+  text-align: left;
+  
+  
+
+}
+
+
+.details li {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+p {
+  font-size: 28;
+  text-align: left;
+}
+.weather_app{
+  min-height: 100vh;
+  background-image: url(/sunshine_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  transition: 10ms;
+  opacity: 1;  /*remember to change it back to zero.1 is for testing */
+}
+.weather_app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+
+}
+
+.panel {
+  position: absolute;
+  width: 45%;
+  height: 70%;
+  top: 16%;
+  right: 28%;
+  background: rgba(110, 110, 110, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1;
+  padding: 3em 2em;
+  
+}
+
+.panel form{
+  margin-bottom: 3em;
+}
+.input_text{
+  background: none;
+  border: none;
+  border-bottom: 1px #ccc solid;
+  padding: 0 1em 0.5em 0;
+  width: 80%;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.input_text:focus {
+  outline: none;
+}
+.input_text::placeholder {
+  color: #ccc;
+  font-size: 1.2em;
+}
+
+.input{
+  text-align: center;
+  margin: 100px auto;
+}
+
+input[type="submit"]{
+  padding: 15px 30px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.input input[type="text"]{
+  width: 600px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.5em;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: #fa6d1b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: 1s;
+
+}
+
+.submit:hover {
+  background: #fff !important;
+  color: #000;
+
+}
+.card{
+  width: 100%;
+  
+  height: 40vh;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+
+.close{
+  float: right;
+  margin-top: -2px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.card h1{
+  padding: 5px 0;
+  text-align: left;
+}
+
+.card p{
+  text-align: right;
+  
+  font-size:14px;
+}

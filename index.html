@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GIFT'S WEATHER APP</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+</head>
+<body>
+  <!-- <div class="main">
+    <div class="header">
+      <h1>OpenWeatherMap API</h1>
+      <p>Enter any city name in the input box below to get the data</p>
+    </div> -->
+
+    <div class="weather_app" id="weather_app">
+      
+      <h4 class="date"></h4>
+
+      <div class="panel">
+        <div id="input">
+          <input type="text" placeholder="Search Location" class="input_text">
+          <button type="submit" value="Submit" class="submit" id="button">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div> 
+    
+        <div class="container">
+          <div class="card">
+            <h1 class="name" id="name"></h1>
+            <!--<p class="temp"></p>  -->
+            <!--<p class="clouds"></p> -->
+            <!-- <div class="weather-icon"></div> -->
+            <!-- <p class="desc"></p> -->
+            <ul class="details">
+              <li>
+                <span>Temperature</span>
+                <p class="temp"></p>
+              </li>
+    
+              <li>
+                <span>Weather</span>
+                <div class="weather-icon"></div>
+                <p class="clouds"></p>
+              </li>
+              <li>
+                <span>Description</span>
+                <p class="desc"></p>
+              </li> 
+            </ul>
+          </div>
+  
+  
+        </div>
+
+      </div>
+    </div>
+<script src="/script.js"></script>
+</body>
+</html>
